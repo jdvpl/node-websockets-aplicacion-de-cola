@@ -45,13 +45,13 @@ class TicketControl{
     fs.writeFileSync(dbpath,JSON.stringify(this.toJson))
   }
 
-  netTicket(){
+  nextTicket(){
     this.ultimo+=1;
     const ticket=new Ticket(this.ultimo,null);
     this.tickets.push(ticket);
 
     this.saveDb();
-    return 'Ticket'+ ticket.numero;
+    return 'Ticket '+ ticket.numero;
   }
 
   attendTicket(escritorio){

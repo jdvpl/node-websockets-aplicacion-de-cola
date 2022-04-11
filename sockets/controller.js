@@ -5,12 +5,12 @@ const TicketControl = require("../models/ticket-control")
 const ticketControl= new TicketControl();
 const socketController=(socket) =>{
 
-  socket.on('enviar-mensaje',async(payload,callback)=>{
-    // leyendo los mensajes
-    socket.broadcast.emit('enviar-mensaje',payload)
-    const id=uuidv4();
-    callback(id)
+  socket.emit("ultimo-ticket",ticketControl.ultimo)
 
+  socket.on('siguiente-ticket',async(payload,callback)=>{
+    const siguiente=ticketControl.nextTicket();
+    callback(siguiente);
+    // TODO: Notificar que hay un nuevo ticket pendiente
   })
 }
 
