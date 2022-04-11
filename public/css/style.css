@@ -2,16 +2,24 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background-color: #6951F0;
+    background-color: #100301;
     color: white;
 }
 
-table {
-    width: 100%;
-    height: 100%;
+.new-ticket {
+    height: 100vh;
+    min-height:600px;
     text-align: center;
+    align-items: center;
 }
-
+.new-ticket > div{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 50%;
+    text-align: center;
+  }
 .ticket-actual {
     background-color: #282828;
 }

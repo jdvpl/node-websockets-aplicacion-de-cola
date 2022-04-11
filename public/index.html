@@ -11,17 +11,18 @@
 </head>
 
 <body class="container">
-    <h1 class="mt-5">Programa de Colas</h1>
+    <h1 class="mt-5 text-center">Programa de Colas</h1>
 
     <div class="row">
-        <div class="col-6">
-
-            <a class="btn btn-primary" href="publico.html">Pantalla publica</a>
-            <a class="btn btn-secondary" href="nuevo-ticket.html">Crear Tickets</a>
+        <div class="col-md-6">
+            <div class="d-grid">
+                <a class="btn btn-primary m-2" href="publico.html">Pantalla publica</a>
+                <a class="btn btn-secondary m-2" href="nuevo-ticket.html">Crear Tickets</a>
+            </div>
 
         </div>
 
-        <div class="col-6">
+        <div class="col-md-6 mt-sm-3">
             <form action="escritorio.html">
 
                 <input name="escritorio" 
@@ -31,10 +32,12 @@
                        autofocus 
                        required>
 
-                <br>
-                <button type="submit" class="btn btn-primary">
-                    Ingresar
-                </button>
+                       <div class="d-grid">
+                        <button type="submit" class="btn btn-primary mt-sm-3">
+                            Ingresar
+                        </button>
+                       </div>
+                
             </form>
         </div>
     </div>
