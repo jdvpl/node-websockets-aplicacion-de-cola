@@ -1,10 +1,10 @@
 {
-  "name": "websockets-server",
+  "name": "websockets-server-colas",
   "version": "1.0.0",
   "description": "introduccion a los websockets",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
